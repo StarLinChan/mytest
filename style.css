@@ -1,0 +1,207 @@
+/* 通用css code */
+.navigationbar .logo{
+    width: 60px;
+    height: auto;
+    border-radius: 20%;
+    
+}
+.searchbt{
+    width: 30%;
+    height: auto;
+    margin:6px 0;
+}
+
+.rumb-bg{
+    /* 麵包屑背景 */
+    background-image: linear-gradient(to left,rgb(255, 157, 157),rgb(249, 209, 131));
+}
+.bg-gradient{
+    background-color:rgb(52, 48, 48);
+}
+.banner p{
+    /* 幻燈片字 */
+    height: 50px;
+    font-size: 20px;
+    color: black;
+}
+.banner .carousel-caption h5{
+    /* 幻燈片標題 */
+    margin-top: 0;
+    font-size: 30px;
+    color:black;
+}
+.footer{
+    /* 頁尾 */
+    height: 50px;
+    font-size: 16px;
+    color: aliceblue;
+}
+.btncol{
+    /* 首頁按鈕主色 */
+    background-color: rgb(249, 209, 131);
+    border: none;
+    transition: all .3s .5s ease;
+    position: relative;
+    box-shadow: 3px 3px 0 0 #ec9a66;
+}
+.btncol:hover{
+    background-color:#ec9a66;
+    box-shadow: 3px 3px 0 0 rgb(170, 170, 170);
+
+}
+
+.scrollspysize{
+    width: auto;
+    height: 600px;
+}
+.pt-6{
+    /* 服務項目清單按鈕下移 */
+   padding-top: 120px;
+}
+.listsize{
+    /* 服務項目list-group */
+    width: 20%;
+}
+.a-hover{
+    /* 服務內容list-group */
+    border-bottom: 2px solid aliceblue;  
+    background-color: rgb(249, 209, 131);
+    transition: all .3s .5s ease;
+    box-shadow: 3px 3px 0 0 rgb(170, 170, 170);
+}
+.a-hover:hover{
+    top: 2px;
+    right: 2px;
+    background-color:rgb(254, 191, 67);
+    box-shadow: 3px 3px 0 0 rgb(170, 170, 170);
+
+}
+
+.item-color{
+    display: flex;
+    justify-content: center;
+    border:4px solid rgb(249, 209, 131);
+    border-radius: 10%;
+}
+.ptext p{
+    text-indent: 20px;
+    
+}
+
+.float-img{
+    width:272px;
+    height: auto;
+    float: left;
+}
+.cardborder{
+    border: none;
+    
+}
+.imgpic{
+    position: relative;
+    z-index: -1;
+    background-image: url(photo-1678802676747-308470207d98.avif);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: auto;
+    min-width: 100%;
+    
+}
+.aboutbox{
+    position:relative;
+    background-color: transparent;
+    border: none;
+    margin: auto;
+    width: 60%;
+    height: 80%;
+    
+}
+
+.ma{
+    height: 5%;
+    width: 20%;
+}
+.cardbg{
+    position:absolute;
+    text-align: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    overflow: hidden;
+    border-radius: 12px;
+}
+.cardbg::after{
+    content: "";
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    filter: blur(10px);
+    background-image: url(photo-1678802676747-308470207d98.avif);
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.dropdown-item{
+    width:80%;
+    border-radius: 6%;
+}
+
+@media screen and (max-width:767px){
+    .footer{
+        width: 100%;
+        font-size: 12px;
+    }
+    .pt-6{
+        padding-top: 0;
+     }
+     .listsize{
+        width: 100%;
+     }
+     .ptext p{
+        text-indent: 15px;
+    }
+    .float-img{
+        width:100%;
+        height: auto;
+        float: left;
+    }
+    .imgpic{
+        background-image: url(photo-1678899711791-913ee743576f.avif);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        
+        width: 100%;
+        height: 100%;
+        
+    }
+    .scrollspysize{
+        
+        max-height: 500px;
+    }
+    .aboutbox{
+        width: 80%;
+        height: 85%;
+        position:relative;
+    }
+    .cardbg::after{
+        content:"";
+        position:absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        background-image:url(photo-1678899711791-913ee743576f.avif);
+        background-attachment:fixed; 
+    }
+    .navbarbody{
+        width: 290px;
+        
+    }
+    
+}
