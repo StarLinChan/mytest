@@ -90,6 +90,7 @@
     width:272px;
     height: auto;
     float: left;
+    max-width: 350px;
 }
 .cardborder{
     border: none;
@@ -214,5 +215,4 @@
         width: 290px;
         
     }
-    
 }
