@@ -10,7 +10,6 @@
     height: auto;
     margin:6px 0;
 }
-
 .rumb-bg{
     /* 麵包屑背景 */
     background-image: linear-gradient(to left,rgb(255, 157, 157),rgb(249, 209, 131));
@@ -87,7 +86,6 @@
     text-indent: 20px;
     
 }
-
 .float-img{
     width:272px;
     height: auto;
