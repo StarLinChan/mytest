@@ -150,6 +150,19 @@
 }
 
 @media screen and (max-width:767px){
+    .banner p{
+        /* 幻燈片字 */
+        
+        height: 3vh;
+        font-size: 12px;
+        color: black;
+    }
+    .banner .carousel-caption h5{
+        /* 幻燈片標題 */
+        margin-top: 0;
+        font-size: 12px;
+        color:black;
+    }
     .footer{
         width: 100%;
         font-size: 12px;
