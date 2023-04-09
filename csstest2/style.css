@@ -445,7 +445,7 @@ h1 {
     position: absolute;
     top: 5%;
     left: 70%;
-    font-size: 32px;
+    font-size: 30px;
     text-decoration: none;
     color: #ccc;
     padding: 6px;
@@ -453,8 +453,8 @@ h1 {
 
 .container-fluid .foodtext h3 a:hover {
     border-radius: 20px;
-    background-color: #eee;
-    color: #000;
+    background-color: #fa0;
+    color: #fff;
 }
 
 .footer{
