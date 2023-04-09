@@ -1,0 +1,173 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+} */
+
+.title-page {
+    width: 100%;
+    height: 100vh;
+
+}
+
+.title-page .wrap {
+    height: 100%;
+    position: relative;
+    background:
+        linear-gradient(115deg, #6b5549 50%, transparent 50%)center center / 100% 100%,
+        url(lily-banse--YHSwy6uqvk-unsplash.jpg)no-repeat right center / auto 100%;
+        
+
+}
+
+.title-page .item {
+    width: 45%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5vh;
+    
+}
+
+.title-page h1 {
+    font-size: 42px;
+    margin-bottom: 4px;
+}
+
+.title-page h3 {
+    font-size: 26px;
+    margin-bottom: 4px;
+}
+
+.title-page p {
+    font-size: 16px;
+    /* 以上都是首頁封面 */
+}
+
+.pic-card{
+    
+    width: 100%;
+    /* max-height: 40vh; */
+    height: auto;
+    background-color: aliceblue;
+}
+.pic-card .wrap{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.pic-card .item{
+    width: 25%;
+    min-width: 25%;
+    height: 100%;
+    max-height: 300px;
+    overflow: hidden;
+    position: relative;
+    
+}
+@media screen and(max-width:768px){
+    .pic-card .item{
+        width: 100%;
+        
+        height: 100%;
+        max-height: 300px;
+        overflow: hidden;
+        position: relative;
+    }
+        
+}
+.pic-card img {
+    width: 100%;
+    height: 300px;
+    vertical-align:middle;
+     object-fit: cover;
+     object-position: 50% 42%;
+    /* 讓圖片下面沒有一點點空格 */
+}
+.pic-card .txt{
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+   background-color: rgba(0, 0, 0, .6);
+   opacity: 0;
+   transition: .3s;
+   text-decoration: none;
+}
+.pic-card .txt h2{
+    /* padding: 0 10px; */
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 10px;
+    
+}
+.pic-card .txt h2:after{
+    content: "";
+    margin:10px 0;
+    display: block;
+    background-color:deepskyblue;
+    width: 0%;
+    height: 2px;
+    transition: .45s .2s;
+}
+.pic-card .txt a{
+    text-decoration: none;
+    color: #fff;
+    transition: .3s;
+}
+.pic-card .txt p{
+    width: 100%;
+    margin-right: 10px;
+    
+    font-size: 16px;
+    color: #fff;
+}
+.pic-card .item:hover .txt{
+    opacity: 1;
+}
+.pic-card .item:hover h2:after{
+    width: 100%;
+}
+.txt a:hover{
+    color:#feaa66;
+}
+
+
+
+/* 以上首頁 */
+
+
+@media screen and (max-width:768px){
+    .pic-card .wrap{
+        flex-wrap: wrap;
+    }
+    .pic-card .item{
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .pic-card .txt p{
+        font-size: 13px;
+    }
+    .pic-card .txt h2{
+        font-size: 16px;
+    }
+    .footerbox{
+        display: none;
+    }
+    .footer-copy{
+        margin-top: 0;
+        
+    }
+}
