@@ -834,6 +834,12 @@ h1 {
         border-bottom: 3px solid #fff;
         /* background-color: #fa0; */
     }
+    .article .menu{
+        display: none;
+    }
+    .article .articlerow{
+        width: 100%; 
+    }
 
     #menu_control:checked~.title-navbar .branch-nav {
         /* display: block; */
