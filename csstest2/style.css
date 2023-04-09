@@ -458,7 +458,7 @@ h1 {
 }
 
 .footer{
-    padding: 6vh 6vh 3vh 6vh;
+    padding: 3vh 6vh 3vh 6vh;
     height: 100%;
     background-color: #111;
 }
@@ -492,7 +492,6 @@ h1 {
 .footer .wrap .item nav{
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     height: 85%;
     width: 100%;
     text-decoration: none;
@@ -817,7 +816,9 @@ h1 {
     .branch .wrap .item img{
         width: 250px;
     }
-
+    .footer{
+        display: none;
+    }
 }
 
 @media screen and (max-width:768px) {
