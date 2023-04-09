@@ -543,7 +543,7 @@ h1 {
 .food .row .col{
     width: 50%;
     height: auto;
-    max-height: 500px;
+    max-height: 700px;
     margin-bottom: 10px;
 }
 .food .row .col img{
